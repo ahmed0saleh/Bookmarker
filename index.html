@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+
+  <div class="valid   align-items-center justify-content-center" id="validelement">
+    <div class="box bg-white p-3" >
+      <div class="logo d-flex justify-content-between align-items-center mb-2">
+        <div class="shape">
+          <span></span><span></span><span></span>
+        </div>
+        <i class="fa-solid fa-xmark fa-1x icon-close"></i>
+      </div>
+      <p class="fw-semibold">Site Name or Url is not valid, Please follow the rules below :</p>
+      <p>Site name must contain at least 5 characters</p>
+      <p>Site URL must start https: and characters from  (a to z) </p>
+    </div>
+  </div>
+<div class="test  py-5">
+  <h1 class="fw-normal">Bookmarker</h1>
+  <form class="fm pt-4">
+    <div class="d-flex align-items-center  justify-content-center mb-4">
+      <i class="fa-solid fa-bookmark me-2 left-icon"></i>
+      <p class="mb-0 fw-medium fs-5"><span class="sp">Bookmark your</span> <span class="sp-1">favorite sites</span></p>
+      <i class="fa-solid fa-bookmark ms-2 right-icon"></i>
+
+    </div>
+    <div class="mb-3">
+      <label for="bm" class="form-label fw-bold ">Site Name</label>
+      <input type="text" id="bm" class="form-control " placeholder="Bookmark Name">
+    </div>
+    <div class="mb-3">
+      <label for="ur" class="form-label fw-bold ">Site URL</label>
+      <input type="text" id="ur" class="form-control " placeholder="Website URL">
+    </div>
+    <button onclick="add()" type="button" class="btn ">Submit</button>
+  </form>
+  <table class="table table-striped tb m-auto text-center">
+    <thead>
+     <tr>
+      <th>Index</th>
+      <th>Website Name</th>
+      <th>Visit</th>
+      <th>Delete</th>
+     </tr>
+    </thead>
+    <tbody id="tb">
+ 
+    </tbody>
+  </table>
+</div>
+
+
+<script src="./js/main.js"></script>
+</body>
+</html>
